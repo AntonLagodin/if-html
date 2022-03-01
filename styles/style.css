@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Roboto:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+}
+
+.offer {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 120px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.line {
+  border: none;
+  width: 100px;
+  height: 4px;
+  background-color: #f5bd41;
+  margin: 0 auto;
+}
+
+.container {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  float: left;
+  margin-top: 80px;
+  margin-bottom: 122px;
+}
+
+.caption {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-top: 48px;
+}
