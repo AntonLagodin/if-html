@@ -18,21 +18,20 @@
   margin: 0 auto;
 }
 
+.section-icon {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 88px 0 104px;
+}
+
 .icon {
   display: inline-block;
   width: 296px;
   height: 176px;
   text-align: center;
   float: left;
-  margin: 80px 16px 122px 0;
-}
-
-.icon:first-of-type {
-  margin-left: 104px;
-}
-
-.icon:last-of-type {
-  margin-right: 104px;
+  margin-right: 16px;
+  margin-bottom: 122px;
 }
 
 .caption {
