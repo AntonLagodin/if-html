@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Roboto:wght@400;500&display=swap');
-
 * {
   margin: 0;
 }
@@ -8,7 +6,7 @@
   text-align: center;
   margin-bottom: 20px;
   margin-top: 120px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
 
@@ -20,17 +18,25 @@
   margin: 0 auto;
 }
 
-.container {
+.icon {
   display: inline-block;
-  width: 25%;
+  width: 296px;
+  height: 176px;
   text-align: center;
   float: left;
-  margin-top: 80px;
-  margin-bottom: 122px;
+  margin: 80px 16px 122px 0;
+}
+
+.icon:first-of-type {
+  margin-left: 104px;
+}
+
+.icon:last-of-type {
+  margin-right: 104px;
 }
 
 .caption {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   margin-top: 48px;
 }
