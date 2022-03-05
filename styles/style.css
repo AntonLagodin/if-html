@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Roboto-Medium.woff") format("woff");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +24,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 1.2em;
 }
 
 .line {
@@ -40,9 +54,9 @@
 .caption {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
   margin-top: 48px;
-  line-height: 28px;
+  line-height: 1.2em;
 }
 
 /* footer */
@@ -54,7 +68,8 @@
 .container-footer {
   display: flex;
   justify-content: space-between;
-  padding: 120px 272px 64px 104px;
+  padding: 120px 272px 40px 104px;
+  max-width: 1440px;
 }
 
 .footer-list {
@@ -62,7 +77,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2em;
 }
 
 li{
@@ -70,14 +85,23 @@ li{
 }
 
 ul li:first-child {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
+}
+
+.about{
+  margin-right: 223px;
+}
+
+.property{
+  margin-right: 283px;
 }
 
 .copyright {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.15em;
   padding-left: 103px;
   padding-bottom: 120px;
 }
