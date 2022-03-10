@@ -17,6 +17,106 @@
   padding: 0;
 }
 
+/*start-page*/
+.start-page {
+  min-height: 100vh;
+  background: url("../img/castelmezzano-1979546 1.svg") center no-repeat;
+  background-size: cover;
+  padding: 51px 80px 120px 104px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1232px;
+  height: 46px;
+  margin-bottom: 196px;
+  box-sizing: border-box;
+}
+
+.logo-img {
+  width: 205px;
+  height: 40px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.2em;
+  color: #FFFFFF;
+  margin-right: 24px;
+  padding-bottom: 12px;
+}
+
+.nav-link:last-of-type {
+  margin-right: 48px;
+}
+
+.nav-link:hover {
+  border-bottom: 4px solid #F5BD41;
+}
+
+.btn {
+  border: none;
+  background-color: #121212;
+  margin-right: 24px;
+}
+
+.main-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2em;
+  color: #ffffff;
+  margin-bottom: 100px;
+}
+.form-search{
+  display: flex;
+  max-width: 1232px;
+  border: 3px solid #F3F3F4;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.input-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.16em;
+  color: #ffffff;
+  margin-left: 24px;
+}
+
+.input-form {
+  height: 64px;
+  border: none;
+}
+
+.destination {
+  width: 467px;
+}
+
+.check {
+  width: 259px;
+}
+
+.guests {
+  width: 314px;
+}
+
+.btn-search {
+  width: 192px;
+  height: 64px;
+}
+
+/*advantages*/
 .offer {
   text-align: center;
   margin-bottom: 20px;
