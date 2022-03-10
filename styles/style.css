@@ -22,13 +22,13 @@
   min-height: 100vh;
   background: url("../img/castelmezzano-1979546 1.svg") center no-repeat;
   background-size: cover;
-  padding: 51px 80px 120px 104px;
+  padding: 51px 104px 0 104px;
+  margin: 0 auto;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  max-width: 1232px;
   height: 46px;
   margin-bottom: 196px;
   box-sizing: border-box;
@@ -45,6 +45,7 @@
 }
 
 .nav-link {
+  justify-content: center;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
@@ -55,10 +56,6 @@
   padding-bottom: 12px;
 }
 
-.nav-link:last-of-type {
-  margin-right: 48px;
-}
-
 .nav-link:hover {
   border-bottom: 4px solid #F5BD41;
 }
@@ -66,7 +63,7 @@
 .btn {
   border: none;
   background-color: #121212;
-  margin-right: 24px;
+  margin-left: 24px;
 }
 
 .main-title {
@@ -77,12 +74,16 @@
   color: #ffffff;
   margin-bottom: 100px;
 }
+
 .form-search{
   display: flex;
-  max-width: 1232px;
-  border: 3px solid #F3F3F4;
-  border-radius: 8px;
+  max-height: 64px;
   box-sizing: border-box;
+  margin-bottom: 129px;
+}
+
+.label-form-search {
+  margin-bottom: 24px;
 }
 
 .input-title {
@@ -92,28 +93,52 @@
   line-height: 1.16em;
   color: #ffffff;
   margin-left: 24px;
+  margin-right: 197px;
 }
 
 .input-form {
   height: 64px;
   border: none;
+  padding-left: 24px;
+}
+
+.input-form:focus {
+  border: 3px solid #F5BD41;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
 .destination {
-  width: 467px;
+  width: 38%;
 }
 
 .check {
-  width: 259px;
+  width: 21%;
 }
 
 .guests {
-  width: 314px;
+  width: 25%;
 }
 
 .btn-search {
-  width: 192px;
-  height: 64px;
+  width: 16%;
+  background-color: #3077C6;
+  border: 3px solid #3077C6;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16em;
+}
+
+.downloads-apps {
+  display: flex;
+  justify-content: center;
+}
+
+a img {
+  margin-right: 13px;
 }
 
 /*advantages*/
@@ -138,7 +163,6 @@
 .container {
   display: flex;
   justify-content: center;
-  max-width: 1440px;
   box-sizing: border-box;
   padding: 80px 88px 0 104px;
 }
