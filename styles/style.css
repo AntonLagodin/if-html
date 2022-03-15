@@ -17,6 +17,139 @@
   padding: 0;
 }
 
+/*start-page*/
+.start-page {
+  min-height: 100vh;
+  background: url("../img/castelmezzano-1979546 1.svg") top no-repeat;
+  background-size: cover;
+  padding: 51px 104px 120px 104px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 46px;
+  margin-bottom: 196px;
+  box-sizing: border-box;
+}
+
+.logo-img {
+  width: 205px;
+  height: 40px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  padding-top: 5px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.2em;
+  color: #ffffff;
+  margin-right: 24px;
+  padding-bottom: 12px;
+}
+
+.nav-link:hover {
+  border-bottom: 4px solid #f5bd41;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  margin-left: 24px;
+}
+
+.main-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2em;
+  color: #ffffff;
+  margin-bottom: 100px;
+}
+
+.form-search {
+  display: flex;
+  max-height: 64px;
+  border: 3px solid #f3f3f4;
+  border-radius: 8px;
+  margin-bottom: 120px;
+  background-color: #ffffff;
+}
+
+.label-form-search {
+  margin-bottom: 24px;
+}
+
+.input-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.16em;
+  color: #ffffff;
+  margin-left: 24px;
+  margin-right: 197px;
+}
+
+.input-form {
+  height: 64px;
+  border: none;
+  padding-left: 24px;
+  margin-right: 3px;
+}
+
+.input-form:focus {
+  border-radius: 8px;
+  outline: 3px solid #f5bd41;
+}
+
+.destination {
+  width: 38%;
+}
+
+.check {
+  width: 21%;
+}
+
+.guests {
+  width: 25%;
+}
+
+.btn-search {
+  width: 16%;
+  background-color: #3077c6;
+  border: 3px solid #3077c6;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16em;
+  margin: -3px -3px -3px 0;
+}
+
+.downloads-apps {
+  display: flex;
+  justify-content: center;
+}
+
+a img {
+  margin-right: 13px;
+}
+
+/*advantages*/
 .offer {
   text-align: center;
   margin-bottom: 20px;
@@ -38,7 +171,6 @@
 .container {
   display: flex;
   justify-content: center;
-  max-width: 1440px;
   box-sizing: border-box;
   padding: 80px 88px 0 104px;
 }
