@@ -4,23 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=width-device, initial-scale = 1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <title>Lesson6</title>
+    <title>Lesson7</title>
   </head>
   <body>
     <!--start-page-->
     <div class="start-page">
       <header class="header">
-        <img class="logo-img" src="./img/logo_vector.svg" alt="logo" />
+        <svg class="logo-img">
+          <use xlink:href="./img/Sprites.svg#logo"></use>
+        </svg>
         <nav class="nav">
           <ul>
             <li><a class="nav-link" href="#">Stays</a></li>
             <li><a class="nav-link" href="#">Attractions</a></li>
           </ul>
           <button class="btn" type="button">
-            <img src="./img/Night.svg" alt="NightTheme" />
+            <svg class="nav-icon theme">
+              <use xlink:href="./img/Sprites.svg#NightTheme"></use>
+            </svg>
           </button>
           <button class="btn" type="button">
-            <img src="./img/AccountCircle.svg" alt="Account" />
+            <svg class="nav-icon account">
+              <use xlink:href="./img/Sprites.svg#Account"></use>
+            </svg>
           </button>
         </nav>
       </header>
@@ -65,47 +71,64 @@
     <!--advantages-->
     <h2 class="offer">What do we offer</h2>
     <hr class="line" />
-    <div class="container">
-      <figure class="icon">
-        <img src="./img/HeadsetMicOutlined1.png" alt="HeadsetMic" />
+    <div class="container-advantages">
+      <figure class="advantages-icon">
+        <svg class="img-icon">
+          <use xlink:href="./img/Sprites.svg#HeadsetMic"></use>
+        </svg>
         <figcaption class="caption">Support 24/7</figcaption>
       </figure>
-      <figure class="icon">
-        <img src="./img/ForumOutlined1.png" alt="Forum" />
+      <figure class="advantages-icon">
+        <svg class="img-icon">
+          <use xlink:href="./img/Sprites.svg#Forum"></use>
+        </svg>
         <figcaption class="caption">Communicate directly</figcaption>
       </figure>
-      <figure class="icon">
-        <img src="./img/DevicesOutlined1.png" alt="Device" />
+      <figure class="advantages-icon">
+        <svg class="img-icon">
+          <use xlink:href="./img/Sprites.svg#Devices"></use>
+        </svg>
         <figcaption class="caption">Book online</figcaption>
       </figure>
-      <figure class="icon">
-        <img src="./img/ThumbUpAltOutlined1.png" alt="ThumbUp" />
+      <figure class="advantages-icon">
+        <svg class="img-icon">
+          <use xlink:href="./img/Sprites.svg#ThumbUpAlt"></use>
+        </svg>
         <figcaption class="caption">Real guest reviews</figcaption>
       </figure>
     </div>
     <!-- footer -->
     <footer class="footer">
+      <svg class="logo-footer">
+        <use xlink:href="./img/Sprites.svg#logo"></use>
+      </svg>
       <div class="container-footer">
         <ul class="footer-list about">
-          <li>About</li>
-          <li>How Triphouse works</li>
-          <li>Careers</li>
-          <li>Privacy</li>
-          <li>Terms</li>
+          <li class="footer-link">
+            <a class="footer-title" href="#">About</a>
+          </li>
+          <li class="footer-link footer-subtitle">How Triphouse works</li>
+          <li class="footer-link footer-subtitle">Careers</li>
+          <li class="footer-link footer-subtitle">Privacy</li>
+          <li class="footer-link footer-subtitle">Terms</li>
         </ul>
         <ul class="footer-list property">
-          <li>Property types</li>
-          <li>Guest houses</li>
-          <li>Hotels</li>
-          <li>Apartments</li>
-          <li>Villas</li>
-          <li>Holiday homes</li>
-          <li>Hostels</li>
+          <li class="footer-link">
+            <a class="footer-title" href="">Property types</a>
+          </li>
+          <li class="footer-link footer-subtitle">Guest houses</li>
+          <li class="footer-link footer-subtitle">Hotels</li>
+          <li class="footer-link footer-subtitle">Apartments</li>
+          <li class="footer-link footer-subtitle">Villas</li>
+          <li class="footer-link footer-subtitle">Holiday homes</li>
+          <li class="footer-link footer-subtitle">Hostels</li>
         </ul>
         <ul class="footer-list">
-          <li>Support</li>
-          <li>Contact Customer Service</li>
-          <li>FAQ</li>
+          <li class="footer-link">
+            <a class="footer-title" href="">Support</a>
+          </li>
+          <li class="footer-link footer-subtitle">Contact Customer Service</li>
+          <li class="footer-link footer-subtitle">FAQ</li>
         </ul>
       </div>
       <p class="copyright">&COPY; 2020 Triphouse, Inc. All rights reserved</p>
