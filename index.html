@@ -9,11 +9,11 @@
   <body>
     <!--start-page-->
     <div class="start-page">
-      <header class="header">
-        <svg class="logo-img">
+      <header class="col-12 header">
+        <svg class="col-2 logo-img">
           <use xlink:href="./img/Sprites.svg#logo"></use>
         </svg>
-        <nav class="nav">
+        <nav class="col-4 nav">
           <ul>
             <li><a class="nav-link" href="#">Stays</a></li>
             <li><a class="nav-link" href="#">Attractions</a></li>
@@ -30,35 +30,35 @@
           </button>
         </nav>
       </header>
-      <h1 class="main-title">
+      <h1 class="col-6 main-title">
         Discover stays <br />
         to live, work or just relax
       </h1>
       <form action="/" method="get">
         <div class="label-form-search">
-          <label class="input-title" for="destination"
+          <label class="col-3 input-title" for="destination"
             >Your destination or hotel name</label
           >
-          <label class="input-title" for="check">Check-in — Check-out</label>
+          <label class="col-2 input-title" for="check">Check-in — Check-out</label>
           <label for="guests"></label>
         </div>
         <div class="form-search">
           <input
-            class="input-form destination"
+            class="col-5 input-form destination"
             type="text"
             id="destination"
             placeholder="Your destination or hotel name"
             name="city"
           />
-          <input class="input-form check" type="date" id="check" name="date" />
+          <input class="col-3 input-form check" type="date" id="check" name="date" />
           <input
-            class="input-form guests"
+            class="col-3 input-form guests"
             type="text"
             id="guests"
             name="guests"
             placeholder="2 Adults — 0 Children — 1 Room"
           />
-          <button class="btn-search" type="submit">Submit</button>
+          <button class="col-2 btn-search" type="submit">Submit</button>
         </div>
       </form>
       <div class="downloads-apps">
@@ -69,28 +69,28 @@
       </div>
     </div>
     <!--advantages-->
-    <h2 class="offer">What do we offer</h2>
+    <h2 class="col-12 offer">What do we offer</h2>
     <hr class="line" />
     <div class="container-advantages">
-      <figure class="advantages-icon">
+      <figure class="col-3 col-s-12 advantages-icon">
         <svg class="img-icon">
           <use xlink:href="./img/Sprites.svg#HeadsetMic"></use>
         </svg>
         <figcaption class="caption">Support 24/7</figcaption>
       </figure>
-      <figure class="advantages-icon">
+      <figure class="col-3 col-s-12 advantages-icon">
         <svg class="img-icon">
           <use xlink:href="./img/Sprites.svg#Forum"></use>
         </svg>
         <figcaption class="caption">Communicate directly</figcaption>
       </figure>
-      <figure class="advantages-icon">
+      <figure class="col-3 col-s-12 advantages-icon">
         <svg class="img-icon">
           <use xlink:href="./img/Sprites.svg#Devices"></use>
         </svg>
         <figcaption class="caption">Book online</figcaption>
       </figure>
-      <figure class="advantages-icon">
+      <figure class="col-3 col-s-12 advantages-icon">
         <svg class="img-icon">
           <use xlink:href="./img/Sprites.svg#ThumbUpAlt"></use>
         </svg>
@@ -131,7 +131,7 @@
           <li class="footer-link footer-subtitle">FAQ</li>
         </ul>
       </div>
-      <p class="copyright">&COPY; 2020 Triphouse, Inc. All rights reserved</p>
+      <p class="col-3 col-s-12 copyright">&COPY; 2020 Triphouse, Inc. All rights reserved</p>
     </footer>
   </body>
 </html>
