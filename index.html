@@ -39,7 +39,9 @@
           <label class="col-3 input-title" for="destination"
             >Your destination or hotel name</label
           >
-          <label class="col-2 input-title" for="check">Check-in — Check-out</label>
+          <label class="col-2 input-title" for="check"
+            >Check-in — Check-out</label
+          >
           <label for="guests"></label>
         </div>
         <div class="form-search">
@@ -50,7 +52,12 @@
             placeholder="Your destination or hotel name"
             name="city"
           />
-          <input class="col-3 input-form check" type="date" id="check" name="date" />
+          <input
+            class="col-3 input-form check"
+            type="date"
+            id="check"
+            name="date"
+          />
           <input
             class="col-3 input-form guests"
             type="text"
@@ -69,9 +76,8 @@
       </div>
     </div>
     <!--advantages-->
-    <h2 class="col-12 offer">What do we offer</h2>
-    <hr class="line" />
-    <div class="container-advantages">
+    <h2 class="col-12 heading-2 offer">What do we offer</h2>
+    <div class="container">
       <figure class="col-3 col-s-12 advantages-icon">
         <svg class="img-icon">
           <use xlink:href="./img/Sprites.svg#HeadsetMic"></use>
@@ -96,6 +102,32 @@
         </svg>
         <figcaption class="caption">Real guest reviews</figcaption>
       </figure>
+    </div>
+    <!--Homes-->
+    <div class="homes-block">
+    <h2 class="heading-2">Homes guests loves</h2>
+    <div class="container">
+      <figure class="homes-item">
+        <img class="homes-img" src="./img/HotelLeopold.svg" alt="Hotel Leopold">
+        <p><a class="homes-title" href="#">Hotel Leopold</a></p>
+        <figcaption class="homes-subtitle">Saint Petersburg, Russia</figcaption>
+      </figure>
+      <figure class="homes-item">
+        <img class="homes-img" src="./img/ApartmentSunshine.svg" alt="Apartment Sunshine">
+        <p><a class="homes-title" href="#">Apartment Sunshine</a></p>
+        <figcaption class="homes-subtitle">Santa  Cruz de Tenerife, Spain</figcaption>
+      </figure>
+      <figure class="homes-item">
+        <img class="homes-img" src="./img/VillaKunerad.svg" alt="Villa Kunerad">
+        <p><a class="homes-title" href="#">Villa Kunerad</a></p>
+        <figcaption class="homes-subtitle">Vysokie Tatry, Slowakia</figcaption>
+      </figure>
+      <figure class="homes-item">
+        <img class="homes-img" src="./img/HostelFriendship.svg" alt="Hostel Friendship">
+        <p><a class="homes-title" href="#">Hostel Friendship</a></p>
+        <figcaption class="homes-subtitle">Berlin, Germany</figcaption>
+      </figure>
+    </div>
     </div>
     <!-- footer -->
     <footer class="footer">
@@ -123,7 +155,7 @@
           <li class="footer-link footer-subtitle">Holiday homes</li>
           <li class="footer-link footer-subtitle">Hostels</li>
         </ul>
-        <ul class="footer-list">
+        <ul class="footer-list support">
           <li class="footer-link">
             <a class="footer-title" href="">Support</a>
           </li>
@@ -131,7 +163,9 @@
           <li class="footer-link footer-subtitle">FAQ</li>
         </ul>
       </div>
-      <p class="col-3 col-s-12 copyright">&COPY; 2020 Triphouse, Inc. All rights reserved</p>
+      <p class="col-3 col-s-12 copyright">
+        &COPY; 2020 Triphouse, Inc. All rights reserved
+      </p>
     </footer>
   </body>
 </html>
