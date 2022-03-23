@@ -305,6 +305,10 @@ a img {
   .property {
     margin: 0 150px 0 0;
   }
+
+  .copyright {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -325,7 +329,6 @@ a img {
   }
 
   .copyright {
-    padding-left: 70px;
     padding-bottom: 60px;
   }
 }
@@ -395,8 +398,6 @@ a img {
   }
 
   .copyright {
-    text-align: center;
-    padding-left: 0;
     padding-bottom: 50px;
     padding-top: 42px;
   }
