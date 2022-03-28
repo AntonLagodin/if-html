@@ -251,7 +251,8 @@ a img {
 /*Homes*/
 .homes {
   background-color: #eaf0f9;
-  padding: 0 88px 0 104px;
+  padding-left: 104px;
+  padding-right: 88px;
 }
 
 .homes__title {
@@ -526,7 +527,8 @@ a img {
   }
   /*media homes*/
   .homes {
-    padding: 0 40px 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .homes__title {
@@ -622,7 +624,8 @@ a img {
   }
   /*media homes*/
   .homes {
-    padding: 0 0 0 17px;
+    padding-left: 17px;
+    padding-right: 0;
   }
 
   .homes__title {
