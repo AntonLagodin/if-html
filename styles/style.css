@@ -174,7 +174,7 @@ a img {
 }
 
 /*advantages*/
-.heading-2 {
+.advantages__title {
   text-align: center;
   padding-top: 120px;
   margin-bottom: 105px;
@@ -182,19 +182,16 @@ a img {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.2em;
-}
-
-.offer {
   position: relative;
 }
 
-.offer::after {
+.advantages__title::after {
   content: " ";
   width: 100px;
   height: 4px;
   background-color: #f5bd41;
   position: absolute;
-  right: 46%;
+  left: 46%;
   bottom: -20px;
 }
 
@@ -228,31 +225,67 @@ a img {
 }
 
 /*Homes*/
-.homes-block {
+.homes {
   background-color: #EAF0F9;
+  padding: 0 88px 0 104px;
 }
 
-.homes-item {
+.homes__title {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2em;
+  padding-top: 120px;
+  padding-bottom: 105px;
+}
+
+.homes__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.homes__item {
   margin-right: 16px;
   margin-bottom: 121px;
+}
+
+.homes__image {
+  margin-bottom: 24px;
+  max-width: 100%;
+}
+
+.homes__subtitle {
+  color: #3077C6;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 24px;
   line-height: 1.16em;
 }
 
-.homes-img {
-  margin-bottom: 24px;
-}
-
-.homes-title {
-  text-decoration: none;
-  color: #3077C6;
-}
-
-.homes-subtitle {
+.homes__desc {
   margin-top: 24px;
   color: #BFBFBF;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.16em;
+}
+
+.homes__button {
+  border: none;
+  background-color: transparent;
+}
+
+.homes__slider {
+  position: relative;
+}
+
+.homes__buttons-wrap {
+  position: absolute;
+  top: 23%;
+  left: 97%;
 }
 
 /* footer */
@@ -310,26 +343,49 @@ a img {
 
 @media screen and (max-width: 1200px) {
   /*media advantages*/
-  .heading-2 {
+  .advantages__title {
     padding-top: 100px;
   }
 
-  .offer::after {
-    right: 45%;
+  .advantages__title::after {
+    left: 45%;
   }
 
   .container {
     flex-wrap: wrap;
-    padding: 60px 0 0 0;
+    padding: 0;
   }
+
   .advantages-icon {
     width: 50%;
     height: auto;
     margin-bottom: 100px;
     margin-right: 0;
   }
+
   .caption {
     margin-top: 30px;
+  }
+  /*media homes*/
+  .homes__title {
+    padding-top: 100px;
+  }
+
+  .homes__buttons-wrap {
+    top: 19%;
+    left: 96%;
+  }
+
+  .homes__image {
+    margin-bottom: 15px;
+  }
+
+  .homes__subtitle, .homes__desc {
+    font-size: 18px;
+  }
+
+  .homes__desc {
+    margin-top: 15px;
   }
   /*media footer*/
   .container-footer {
@@ -345,18 +401,26 @@ a img {
 
 @media screen and (max-width: 991px) {
   /*media advantages*/
-  .heading-2 {
+  .advantages__title {
     padding-top: 60px;
     font-size: 32px;
   }
 
-  .offer::after {
-    right: 44%;
+  .advantages__title::after {
+    left: 44%;
   }
 
   .container-footer {
     padding: 60px 0;
     justify-content: center;
+  }
+  /*media homes*/
+  .homes__item:nth-child(4){
+    display: none;
+  }
+
+  .homes__subtitle, .homes__desc {
+    font-size: 15px;
   }
   /*media footer*/
   .about,
@@ -365,7 +429,8 @@ a img {
   }
 
   .copyright {
-    padding-left: 70px;
+    text-align: center;
+    padding-left: 0;
     padding-bottom: 60px;
   }
 }
@@ -384,12 +449,12 @@ a img {
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
   /*media advantages*/
-  .heading-2 {
+  .advantages__title {
     padding-top: 40px;
     margin-bottom: 60px;
   }
 
-  .offer:after {
+  .advantages__title:after {
     display: none;
   }
 
@@ -408,6 +473,44 @@ a img {
 
   .caption {
     font-size: 20px;
+  }
+  /*media homes*/
+  .homes {
+    padding: 0 40px 0 40px;
+  }
+
+  .homes__title {
+    font-size: 28px;
+    line-height: 1.17em;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .homes__item:nth-child(3) {
+    display: none;
+  }
+
+  .homes__item {
+    margin-right: 16px;
+    margin-bottom: 40px;
+  }
+
+  .homes__image {
+    margin-bottom: 8px;
+  }
+
+  .homes__subtitle, .homes__desc {
+    font-size: 15px;
+    line-height: 1.17em;
+  }
+
+  .homes__desc {
+    margin-top: 4px;
+  }
+
+  .homes__buttons-wrap {
+    top: 26%;
+    left: 94%;
   }
   /*media footer*/
   .container-footer {
@@ -437,8 +540,6 @@ a img {
   }
 
   .copyright {
-    text-align: center;
-    padding-left: 0;
     padding-bottom: 50px;
     padding-top: 42px;
   }
@@ -446,9 +547,9 @@ a img {
 
 @media screen and (max-width: 360px) {
   /*media advantages*/
-  .offer {
+  .advantages__title {
     font-size: 28px;
-    line-height: 1.18em;
+    line-height: 1.17em;
     padding-top: 24px;
     margin-bottom: 0;
   }
@@ -467,6 +568,18 @@ a img {
     margin-top: 16px;
     font-size: 15px;
     line-height: 1.13em;
+  }
+  /*media homes*/
+  .homes {
+    padding: 0 0 0 17px;
+  }
+
+  .homes__title {
+    padding-bottom: 32px;
+  }
+
+  .homes__buttons-wrap {
+    left: 89%;
   }
   /*media footer*/
   .logo-footer {
