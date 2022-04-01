@@ -39,7 +39,9 @@
           <label class="col-3 input-title" for="destination"
             >Your destination or hotel name</label
           >
-          <label class="col-2 input-title" for="check">Check-in — Check-out</label>
+          <label class="col-2 input-title" for="check"
+            >Check-in — Check-out</label
+          >
           <label for="guests"></label>
         </div>
         <div class="form-search">
@@ -50,7 +52,12 @@
             placeholder="Your destination or hotel name"
             name="city"
           />
-          <input class="col-3 input-form check" type="date" id="check" name="date" />
+          <input
+            class="col-3 input-form check"
+            type="date"
+            id="check"
+            name="date"
+          />
           <input
             class="col-3 input-form guests"
             type="text"
@@ -69,9 +76,8 @@
       </div>
     </div>
     <!--advantages-->
-    <h2 class="col-12 offer">What do we offer</h2>
-    <hr class="line" />
-    <div class="container-advantages">
+    <h2 class="col-12 advantages__title">What do we offer</h2>
+    <div class="container">
       <figure class="col-3 col-s-12 advantages-icon">
         <svg class="img-icon">
           <use xlink:href="./img/Sprites.svg#HeadsetMic"></use>
@@ -97,6 +103,58 @@
         <figcaption class="caption">Real guest reviews</figcaption>
       </figure>
     </div>
+    <!--Homes-->
+    <section class="homes">
+      <h2 class="homes__title">Homes guests loves</h2>
+      <div class="homes__slider">
+        <ul class="homes__list">
+          <li class="homes__item">
+            <img
+              src="./img/HotelLeopold.svg"
+              alt="Hotel Leopold"
+              class="homes__image"
+            />
+            <h3 class="homes__subtitle">Hotel Leopold</h3>
+            <p class="homes__desc">Saint Petersburg, Russia</p>
+          </li>
+          <li class="homes__item">
+            <img
+              src="./img/ApartmentSunshine.svg"
+              alt="Apartment Sunshine"
+              class="homes__image"
+            />
+            <h3 class="homes__subtitle">Apartment Sunshine</h3>
+            <p class="homes__desc">
+              Santa Cruz de Tenerife,<br />
+              Spain
+            </p>
+          </li>
+          <li class="homes__item">
+            <img
+              src="./img/VillaKunerad.svg"
+              alt="Villa Kunerad"
+              class="homes__image"
+            />
+            <h3 class="homes__subtitle">Villa Kunerad</h3>
+            <p class="homes__desc">Vysokie Tatry, Slowakia</p>
+          </li>
+          <li class="homes__item">
+            <img
+              src="./img/HostelFriendship.svg"
+              alt="Hostel Friendship"
+              class="homes__image"
+            />
+            <h3 class="homes__subtitle">Hostel Friendship</h3>
+            <p class="homes__desc">Berlin, Germany</p>
+          </li>
+        </ul>
+        <div class="homes__buttons-wrap">
+          <button class="homes__button" type="button">
+            <img src="./img/arrow.svg" alt="arrow" />
+          </button>
+        </div>
+      </div>
+    </section>
     <!-- footer -->
     <footer class="footer">
       <svg class="logo-footer">
@@ -123,7 +181,7 @@
           <li class="footer-link footer-subtitle">Holiday homes</li>
           <li class="footer-link footer-subtitle">Hostels</li>
         </ul>
-        <ul class="footer-list">
+        <ul class="footer-list support">
           <li class="footer-link">
             <a class="footer-title" href="">Support</a>
           </li>
