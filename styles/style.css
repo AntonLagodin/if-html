@@ -313,6 +313,188 @@ a img {
   left: 97%;
 }
 
+/*destinations*/
+.destinations {
+  padding-left: 104px;
+  padding-right: 88px;
+}
+
+.destinations__title {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2em;
+  padding-top: 120px;
+  padding-bottom: 104px;
+}
+
+.destinations__tabs {
+  display: flex;
+  background-color: #f3f3f4;
+  border-radius: 8px;
+  max-width: 622px;
+  margin-bottom: 65px;
+}
+
+.destinations__btn-switch {
+  background-color: #f3f3f4;
+  border: none;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.17em;
+  color: #383838;
+  cursor: pointer;
+  width: 31%;
+  padding: 17px 52px;
+}
+
+.destinations__btn-switch:last-child {
+  width: 38%;
+  padding: 17px 25px;
+}
+
+.destinations__btn-switch:focus {
+  background-color: #3077c6;
+  color: #ffffff;
+}
+
+.destinations__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.destinations__item {
+  margin-right: 16px;
+  position: relative;
+}
+
+.destinations__image {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.destinations__btn-book {
+  position: absolute;
+  top: 35%;
+  left: 27%;
+  background-color: #ffffff;
+  color: #3077c6;
+  padding: 13px 24px;
+  border: 1px solid #3077c6;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.17em;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.destinations__item:hover .destinations__btn-book {
+  opacity: 1;
+}
+
+.destinations__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.17em;
+  color: #3077c6;
+}
+
+.destinations__slider {
+  position: relative;
+}
+
+.destinations__slider-wrap {
+  display: none;
+  position: absolute;
+}
+
+.destinations__slider-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.destinations__button-wrap {
+  text-align: center;
+  margin-bottom: 121px;
+}
+
+.destinations__button {
+  transform: rotate(90deg);
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/*Sign up*/
+.sign-up {
+  padding-left: 104px;
+  padding-right: 104px;
+}
+
+.sign-up__wrap {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eaf0f9;
+  position: relative;
+}
+
+.sign-up__image {
+  padding: 57px 24px;
+}
+
+.sign-up__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17em;
+  color: #383838;
+  padding-top: 51px;
+  margin-right: 599px;
+}
+
+.sign-up__btn {
+  background-color: #ffffff;
+  color: #3077c6;
+  border: 1px solid #3077c6;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.17em;
+  position: absolute;
+  top: 53%;
+  left: 11%;
+  cursor: pointer;
+  margin-top: 21px;
+}
+
+.sign-up__btn-close {
+  width: 26px;
+  height: 26px;
+  background-color: transparent;
+  border: none;
+  padding-top: 24px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+/*Sign-up-app*/
+  .sign-up-app {
+    display: none;
+  }
 /* footer */
 .footer {
   background-color: #10367c;
@@ -366,7 +548,7 @@ a img {
 
 /* Media */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1232px) {
   /*media advantages*/
   .advantages__title {
     padding-top: 100px;
@@ -413,6 +595,34 @@ a img {
   .homes__desc {
     margin-top: 15px;
   }
+  /*destinations*/
+  .destinations__title {
+    padding-top: 100px;
+  }
+
+  .destinations__image {
+    margin-bottom: 15px;
+  }
+
+  .destinations__btn-book {
+    display: none;
+  }
+
+  .destinations__subtitle {
+    font-size: 18px;
+  }
+  /*media Sign-up*/
+  .sign-up {
+    padding: 0;
+  }
+
+  .sign-up__title {
+    margin-right: 550px;
+  }
+
+  .sign-up__btn {
+    left: 13%;
+  }
   /*media footer*/
   .container-footer {
     padding: 100px 0;
@@ -422,10 +632,6 @@ a img {
   .about,
   .property {
     margin: 0 150px 0 0;
-  }
-
-  .copyright {
-    text-align: center;
   }
 }
 
@@ -445,6 +651,10 @@ a img {
     justify-content: center;
   }
   /*media homes*/
+  .homes__item {
+    margin-bottom: 100px;
+  }
+
   .homes__item:nth-child(4) {
     display: none;
   }
@@ -452,6 +662,50 @@ a img {
   .homes__subtitle,
   .homes__desc {
     font-size: 15px;
+  }
+
+  /*media destinations*/
+  .destinations__tabs {
+    background-color: #ffffff;
+    max-width: 100%;
+  }
+
+  .destinations__btn-switch {
+    margin-right: 16px;
+    width: 33.3%;
+    border: 1px solid #f3f3f4;
+    font-size: 15px;
+  }
+  .destinations__item:nth-child(4) {
+    display: none;
+  }
+
+  .destinations__list {
+    margin-bottom: 100px;
+  }
+
+  .destinations__item {
+    margin-bottom: 0;
+  }
+
+  .destinations__slider-wrap {
+    display: block;
+    top: 33%;
+    left: 96%;
+  }
+
+  .destinations__button-wrap {
+    display: none;
+  }
+
+  /*media Sign-up*/
+  .sign-up__title {
+    margin-right: 400px;
+    font-size: 20px;
+  }
+
+  .sign-up__btn {
+    left: 16%;
   }
   /*media footer*/
   .about,
@@ -551,10 +805,6 @@ a img {
     margin-bottom: 40px;
   }
 
-  .homes__image {
-    margin-bottom: 8px;
-  }
-
   .homes__subtitle,
   .homes__desc {
     font-size: 15px;
@@ -569,6 +819,122 @@ a img {
     top: 26%;
     left: 94%;
   }
+  /*media destinations*/
+  .destinations {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .destinations__tabs {
+    margin-bottom: 24px;
+  }
+
+  .destinations__btn-switch {
+    padding: 0;
+    background-color: #ffffff;
+    font-size: 19px;
+    height: 32px;
+    margin-right: 17px;
+    border-radius: 4px;
+  }
+
+  .destinations__btn-switch:last-child {
+    padding: 0;
+    width: 33.3%;
+  }
+
+  .destinations__text-visible {
+    display: none;
+  }
+
+  .destinations__title {
+    font-size: 28px;
+    line-height: 1.17em;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .destinations__list {
+    margin-bottom: 40px;
+  }
+
+  .destinations__item:nth-child(3) {
+    display: none;
+  }
+
+  .destinations__image {
+    margin-bottom: 8px;
+  }
+
+  .destinations__subtitle {
+    font-size: 15px;
+  }
+
+  .destinations__slider-wrap {
+    top: 37%;
+    left: 93%;
+  }
+  /*media Sign-up*/
+  .sign-up {
+    display: none;
+  }
+
+  /*media Sign-up-app*/
+  .sign-up-app {
+    display: block;
+    padding-left: 40px;
+    padding-right: 56px;
+  }
+
+  .sign-up-app__wrap {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0;
+  }
+
+  .btn-app {
+    width: 16px;
+    height: 16px;
+    padding-top: 0;
+    margin-right: 20px;
+    align-self: center;
+  }
+
+  .sign-up-app__image-close {
+    width: 16px;
+    height: 16px;
+  }
+
+  .sign-up-app__logo {
+    width: 150px;
+    height: 20px;
+    align-self: center;
+    color: #ffffff;
+    margin-right: 30px;
+    background-color: #3077c6;
+    border-radius: 8px;
+    padding: 30px 6px;
+  }
+
+  .sign-up-app__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.17em;
+    color: #383838;
+    margin-right: 16px;
+    align-self: center;
+  }
+
+  .sign-up-app__download {
+    text-decoration: none;
+    color: #3077c6;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 1.17em;
+    align-self: center;
+  }
+
   /*media footer*/
   .container-footer {
     justify-content: center;
@@ -602,7 +968,7 @@ a img {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
   /*media advantages*/
   .advantages__title {
     font-size: 28px;
@@ -638,6 +1004,50 @@ a img {
 
   .homes__buttons-wrap {
     left: 89%;
+  }
+  /*media destinations*/
+  .destinations {
+    padding-left: 17px;
+    padding-right: 0;
+  }
+
+  .destinations__title {
+    padding-bottom: 32px;
+  }
+
+  .destinations__subtitle {
+    font-size: 12px;
+  }
+
+  .destinations__slider-wrap {
+    left: 89%;
+  }
+
+  /*sign-up-app*/
+  .sign-up-app {
+    padding-left: 17px;
+    padding-right: 16px;
+  }
+
+  .btn-app {
+    margin-right: 16px;
+  }
+
+  .sign-up-app__title {
+    font-size: 12px;
+  }
+
+  .sign-up-app__download {
+    font-size: 14px;
+  }
+
+  .sign-up-app__logo {
+    width: 87px;
+    height: 11px;
+    color: #ffffff;
+    margin-right: 16px;
+    padding: 23px 2px;
+    border-radius: 4px;
   }
   /*media footer*/
   .logo-footer {
