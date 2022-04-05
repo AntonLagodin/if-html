@@ -315,8 +315,6 @@ a img {
 
 /*destinations*/
 .destinations {
-  max-width: 1232px;
-  margin: 0 auto;
   padding-left: 104px;
   padding-right: 88px;
 }
@@ -441,10 +439,14 @@ a img {
 
 /*Sign up*/
 .sign-up {
+  padding-left: 104px;
+  padding-right: 104px;
+}
+
+.sign-up__wrap {
   display: flex;
-  max-width: 1232px;
+  justify-content: space-between;
   background-color: #eaf0f9;
-  margin: 0 auto;
   position: relative;
 }
 
@@ -473,7 +475,7 @@ a img {
   font-size: 18px;
   line-height: 1.17em;
   position: absolute;
-  top: 39%;
+  top: 53%;
   left: 11%;
   cursor: pointer;
   margin-top: 21px;
@@ -485,8 +487,14 @@ a img {
   background-color: transparent;
   border: none;
   padding-top: 24px;
+  margin-right: 24px;
   cursor: pointer;
 }
+
+/*Sign-up-app*/
+  .sign-up-app {
+    display: none;
+  }
 /* footer */
 .footer {
   background-color: #10367c;
@@ -603,9 +611,17 @@ a img {
   .destinations__subtitle {
     font-size: 18px;
   }
-  /*Sign Up*/
+  /*media Sign-up*/
   .sign-up {
-    display: none;
+    padding: 0;
+  }
+
+  .sign-up__title {
+    margin-right: 550px;
+  }
+
+  .sign-up__btn {
+    left: 13%;
   }
   /*media footer*/
   .container-footer {
@@ -680,6 +696,16 @@ a img {
 
   .destinations__button-wrap {
     display: none;
+  }
+
+  /*media Sign-up*/
+  .sign-up__title {
+    margin-right: 400px;
+    font-size: 20px;
+  }
+
+  .sign-up__btn {
+    left: 16%;
   }
   /*media footer*/
   .about,
@@ -848,6 +874,67 @@ a img {
     top: 37%;
     left: 93%;
   }
+  /*media Sign-up*/
+  .sign-up {
+    display: none;
+  }
+
+  /*media Sign-up-app*/
+  .sign-up-app {
+    display: block;
+    padding-left: 40px;
+    padding-right: 56px;
+  }
+
+  .sign-up-app__wrap {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0;
+  }
+
+  .btn-app {
+    width: 16px;
+    height: 16px;
+    padding-top: 0;
+    margin-right: 20px;
+    align-self: center;
+  }
+
+  .sign-up-app__image-close {
+    width: 16px;
+    height: 16px;
+  }
+
+  .sign-up-app__logo {
+    width: 150px;
+    height: 20px;
+    align-self: center;
+    color: #ffffff;
+    margin-right: 30px;
+    background-color: #3077c6;
+    border-radius: 8px;
+    padding: 30px 6px;
+  }
+
+  .sign-up-app__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.17em;
+    color: #383838;
+    margin-right: 16px;
+    align-self: center;
+  }
+
+  .sign-up-app__download {
+    text-decoration: none;
+    color: #3077c6;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 1.17em;
+    align-self: center;
+  }
+
   /*media footer*/
   .container-footer {
     justify-content: center;
@@ -934,6 +1021,33 @@ a img {
 
   .destinations__slider-wrap {
     left: 89%;
+  }
+
+  /*sign-up-app*/
+  .sign-up-app {
+    padding-left: 17px;
+    padding-right: 16px;
+  }
+
+  .btn-app {
+    margin-right: 16px;
+  }
+
+  .sign-up-app__title {
+    font-size: 12px;
+  }
+
+  .sign-up-app__download {
+    font-size: 14px;
+  }
+
+  .sign-up-app__logo {
+    width: 87px;
+    height: 11px;
+    color: #ffffff;
+    margin-right: 16px;
+    padding: 23px 2px;
+    border-radius: 4px;
   }
   /*media footer*/
   .logo-footer {
