@@ -12,6 +12,13 @@
   src: url("../fonts/Roboto-Medium.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -207,6 +214,7 @@ a img {
   font-size: 40px;
   line-height: 1.2em;
   position: relative;
+  color: #383838;
 }
 
 .advantages__title::after {
@@ -263,6 +271,7 @@ a img {
   line-height: 1.2em;
   padding-top: 120px;
   padding-bottom: 105px;
+  color: #383838;
 }
 
 .homes__list {
@@ -327,6 +336,7 @@ a img {
   line-height: 1.2em;
   padding-top: 120px;
   padding-bottom: 104px;
+  color: #383838;
 }
 
 .destinations__tabs {
@@ -493,8 +503,6 @@ a img {
 
 /*Reviews*/
 .reviews {
-  margin: 0 auto;
-  max-width: 1248px;
   padding-left: 104px;
   padding-right: 88px;
 }
@@ -507,6 +515,7 @@ a img {
   padding-top: 120px;
   padding-bottom: 104px;
   text-align: center;
+  color: #383838;
 }
 
 .reviews__slider {
@@ -534,7 +543,6 @@ a img {
 
 .reviews__item {
   margin-right: 16px;
-  position: relative;
   background-color: #EAF0F9;
 }
 
@@ -542,11 +550,15 @@ a img {
   width: 100%;
 }
 
+.reviews__image-wrap {
+  position: relative;
+}
+
 .reviews__image-title {
   background-color: rgba(56, 56, 56, 0.7);
   padding: 16px 0 11px 24px;
   position: absolute;
-  top: 46%;
+  top: 87%;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -562,7 +574,7 @@ a img {
   margin: 24px 24px 8px 24px;
 }
 
-.secondary {
+.wrap-margin {
   margin: 0 24px 24px 24px;
 }
 
@@ -601,19 +613,20 @@ a img {
   color: #BFBFBF;
 }
 
-.reviews__guests-with-avatar {
+.reviews__guests {
   display: flex;
   margin-left: 24px;
   margin-bottom: 17px;
 }
 
 .reviews__guests-account {
-  width: 64px;
-  height: 64px;
+  width: 53px;
+  height: 53px;
+  padding: 5px;
   fill: #BFBFBF;
 }
 
-.reviews__name-and-country {
+.reviews__guests-info {
   margin-left: 16px;
 }
 
@@ -785,8 +798,8 @@ a img {
     left: 13%;
   }
   /*media reviews*/
-  .reviews__image-title {
-    display: none;
+  .reviews__title {
+    padding-top: 100px;
   }
 
   .reviews__item:nth-child(3) {
@@ -881,8 +894,16 @@ a img {
     left: 16%;
   }
   /*media reviews*/
+  .reviews__image-title {
+    display: none;
+  }
+
   .reviews__button-wrap {
     top: 21%;
+  }
+
+  .reviews__list {
+    margin-bottom: 100px;
   }
   /*media footer*/
   .about,
@@ -1055,15 +1076,34 @@ a img {
   .reviews {
     padding-left: 16px;
     padding-right: 16px;
+    background-color: #EAF0F9;
   }
 
   .reviews__title {
     padding-top: 40px;
     padding-bottom: 40px;
+    font-size: 28px;
+  }
+
+  .reviews__wrapper {
+    margin: 12px 0 2px 0;
+  }
+
+  .wrap-margin {
+    margin: 0 0 11px 0;
+  }
+
+  .reviews__title-visible {
+    display: none;
+  }
+
+  .reviews__title::first-letter {
+    text-transform: uppercase;
   }
 
   .reviews__list {
     justify-content: center;
+    margin-bottom: 0;
   }
 
   .reviews__button-wrap {
@@ -1076,6 +1116,16 @@ a img {
 
   .reviews__item {
     margin-right: 0;
+  }
+
+  .reviews__guests {
+    margin-left: 0;
+  }
+
+  .reviews__text {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 80px;
   }
 
   /*media Sign-up*/
@@ -1227,29 +1277,8 @@ a img {
     left: 89%;
   }
   /*media reviews*/
-  .reviews {
-    background-color: #EAF0F9;
-  }
-
   .reviews__title {
-    font-size: 28px;
     padding-bottom: 32px;
-  }
-
-  .reviews__title-visible {
-    display: none;
-  }
-
-  .reviews__title::first-letter {
-    text-transform: uppercase;
-  }
-
-  .reviews__wrapper {
-    margin: 12px 0 2px 0;
-  }
-
-  .secondary {
-    margin: 0 0 11px 0;
   }
 
   .reviews__subtitle, .reviews__desc {
@@ -1265,16 +1294,12 @@ a img {
     font-size: 12px;
   }
 
-  .reviews__guests-with-avatar {
-    margin-left: 0;
-  }
-
   .reviews__guests-avatar {
     width: 53px;
     height: 53px;
   }
 
-  .reviews__name-and-country {
+  .reviews__guests-info {
     margin-left: 8px;
   }
 
@@ -1287,11 +1312,6 @@ a img {
     height: 14px;
   }
 
-  .reviews__text {
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 80px;
-  }
   /*sign-up-app*/
   .sign-up-app {
     padding-left: 17px;
