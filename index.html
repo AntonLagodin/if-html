@@ -65,7 +65,7 @@
             name="guests"
             placeholder="2 Adults — 0 Children — 1 Room"
           />
-          <button class="col-2 btn-search" type="submit">Submit</button>
+          <button class="col-2 btn-search" type="submit">Search</button>
         </div>
       </form>
       <div class="downloads-apps">
@@ -222,8 +222,8 @@
         <img src="./img/user.svg" alt="user" class="sign-up__image" />
         <p class="sign-up__title">Sign up and get 20% off your first booking</p>
         <button class="sign-up__btn">Sign up</button>
-        <button class="sign-up__btn-close">
-          <img src="./img/close.svg" alt="X" class="sign-up__image-close" />
+        <button class="sign-up__btn-close" aria-label="close">
+          <img src="./img/close.svg" alt="close" class="sign-up__image-close" />
         </button>
       </div>
     </section>
@@ -243,12 +243,12 @@
               />
               <p class="reviews__image-title">From 250 USD</p>
             </div>
-            <div class="reviews__wrapper">
-              <p class="reviews__subtitle">Ubud Bali Resort&SPA</p>
+            <div class="reviews__hotel-and-rate">
+              <h3 class="reviews__hotel-name">Ubud Bali Resort&SPA</h3>
               <p class="reviews__rating">9,4</p>
             </div>
-            <div class="reviews__wrapper wrap-margin">
-              <p class="reviews__desc">Bali, Indonesia</p>
+            <div class="reviews__place-and-count">
+              <p class="reviews__place">Bali, Indonesia</p>
               <p class="reviews__counter">1324 reviews</p>
             </div>
             <div class="reviews__guests">
@@ -279,12 +279,12 @@
               <img src="./img/Hostel.svg" alt="Hostel" class="reviews__image" />
               <p class="reviews__image-title">From 40 USD</p>
             </div>
-            <div class="reviews__wrapper">
-              <p class="reviews__subtitle">King Kong Hostel</p>
+            <div class="reviews__hotel-and-rate">
+              <h3 class="reviews__hotel-name">King Kong Hostel</h3>
               <p class="reviews__rating">8,9</p>
             </div>
-            <div class="reviews__wrapper wrap-margin">
-              <p class="reviews__desc">Rotterdam, Netherlands</p>
+            <div class="reviews__place-and-count">
+              <p class="reviews__place">Rotterdam, Netherlands</p>
               <p class="reviews__counter">2016 reviews</p>
             </div>
             <div class="reviews__guests">
@@ -301,9 +301,13 @@
             </div>
             <p class="reviews__text">
               I've been in this hostel for a month and here is the best hostel
-              of all<br />
+              of all
+            </p>
+            <p class="reviews__text">
               Excellent management of excellent and ethical staff and bedrooms
-              Bathrooms are always clean and excellent<br />
+              Bathrooms are always clean and excellent
+            </p>
+            <p class="reviews__text">
               Most importantly, those who work here are kind and good-natured.
             </p>
           </li>
@@ -312,12 +316,12 @@
               <img src="./img/Hotel.svg" alt="Hotel" class="reviews__image" />
               <p class="reviews__image-title">From 100 USD</p>
             </div>
-            <div class="reviews__wrapper">
-              <p class="reviews__subtitle">Rokoko Hotel</p>
+            <div class="reviews__hotel-and-rate">
+              <h3 class="reviews__hotel-name">Rokoko Hotel</h3>
               <p class="reviews__rating">9,1</p>
             </div>
-            <div class="reviews__wrapper wrap-margin">
-              <p class="reviews__desc">Ourika, Marocco</p>
+            <div class="reviews__place-and-count">
+              <p class="reviews__place">Ourika, Marocco</p>
               <p class="reviews__counter">815 reviews</p>
             </div>
             <div class="reviews__guests">
@@ -349,6 +353,11 @@
             <img src="./img/arrow.svg" alt="slider" />
           </button>
         </div>
+        <img
+          src="./img/navigation-dots.svg"
+          alt="dots"
+          class="reviews__nav-dots"
+        />
       </div>
     </section>
     <!--Sign-up App-->

@@ -68,7 +68,7 @@ svg {
 /*start-page*/
 .start-page {
   min-height: 100vh;
-  background: url("../img/castelmezzano-1979546 1.svg") top no-repeat;
+  background: url("../img/bg-main-section.svg") top no-repeat;
   background-size: cover;
   padding: 51px 104px 120px 104px;
   margin: 0 auto;
@@ -455,7 +455,6 @@ a img {
 
 .sign-up__wrap {
   display: flex;
-  justify-content: space-between;
   background-color: #eaf0f9;
   position: relative;
 }
@@ -543,7 +542,8 @@ a img {
 
 .reviews__item {
   margin-right: 16px;
-  background-color: #EAF0F9;
+  background-color: #eaf0f9;
+  padding-bottom: 24px;
 }
 
 .reviews__image {
@@ -568,41 +568,43 @@ a img {
   color: #ffffff;
 }
 
-.reviews__wrapper {
+.reviews__hotel-and-rate {
   display: flex;
   justify-content: space-between;
   margin: 24px 24px 8px 24px;
 }
 
-.wrap-margin {
+.reviews__place-and-count {
+  display: flex;
+  justify-content: space-between;
   margin: 0 24px 24px 24px;
 }
 
-.reviews__subtitle {
+.reviews__hotel-name {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.17em;
-  color: #3077C6;
+  color: #3077c6;
 }
 
 .reviews__rating {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.36em;
   color: #ffffff;
-  background-color: #10367C;
+  background-color: #10367c;
   padding: 4px 11px;
   border-radius: 8px;
 }
 
-.reviews__desc {
+.reviews__place {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.17em;
-  color: #3077C6;
+  color: #3077c6;
 }
 
 .reviews__counter {
@@ -610,7 +612,7 @@ a img {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.17em;
-  color: #BFBFBF;
+  color: #bfbfbf;
 }
 
 .reviews__guests {
@@ -623,7 +625,7 @@ a img {
   width: 53px;
   height: 53px;
   padding: 5px;
-  fill: #BFBFBF;
+  fill: #bfbfbf;
 }
 
 .reviews__guests-info {
@@ -645,7 +647,7 @@ a img {
   font-weight: normal;
   font-size: 18px;
   line-height: 1.17em;
-  color: #BFBFBF;
+  color: #bfbfbf;
 }
 
 .reviews__country {
@@ -662,13 +664,16 @@ a img {
   font-size: 18px;
   line-height: 1.17em;
   color: #383838;
-  margin-bottom: 24px;
+}
+
+.reviews__nav-dots {
+  display: none;
 }
 
 /*Sign-up-app*/
-  .sign-up-app {
-    display: none;
-  }
+.sign-up-app {
+  display: none;
+}
 /* footer */
 .footer {
   background-color: #10367c;
@@ -1076,7 +1081,7 @@ a img {
   .reviews {
     padding-left: 16px;
     padding-right: 16px;
-    background-color: #EAF0F9;
+    background-color: #eaf0f9;
   }
 
   .reviews__title {
@@ -1085,11 +1090,11 @@ a img {
     font-size: 28px;
   }
 
-  .reviews__wrapper {
+  .reviews__hotel-and-rate {
     margin: 12px 0 2px 0;
   }
 
-  .wrap-margin {
+  .reviews__place-and-count {
     margin: 0 0 11px 0;
   }
 
@@ -1116,6 +1121,7 @@ a img {
 
   .reviews__item {
     margin-right: 0;
+    padding-bottom: 0;
   }
 
   .reviews__guests {
@@ -1125,7 +1131,13 @@ a img {
   .reviews__text {
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 80px;
+    margin-bottom: 32px;
+  }
+
+  .reviews__nav-dots {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 40px;
   }
 
   /*media Sign-up*/
@@ -1236,9 +1248,9 @@ a img {
   }
 
   .advantages-icon {
-    width: 214px;
     height: 104px;
     margin-bottom: 32px;
+    width: 100%;
   }
 
   .caption {
@@ -1281,7 +1293,8 @@ a img {
     padding-bottom: 32px;
   }
 
-  .reviews__subtitle, .reviews__desc {
+  .reviews__hotel-name,
+  .reviews__place {
     font-size: 15px;
   }
 
@@ -1303,7 +1316,9 @@ a img {
     margin-left: 8px;
   }
 
-  .reviews__guests-name, .reviews__guests-country, .reviews__text {
+  .reviews__guests-name,
+  .reviews__guests-country,
+  .reviews__text {
     font-size: 15px;
   }
 
