@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=width-device, initial-scale = 1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <title>Lesson7</title>
+    <title>TripHouse</title>
   </head>
   <body>
     <!--start-page-->
@@ -65,7 +65,7 @@
             name="guests"
             placeholder="2 Adults — 0 Children — 1 Room"
           />
-          <button class="col-2 btn-search" type="submit">Submit</button>
+          <button class="col-2 btn-search" type="submit">Search</button>
         </div>
       </form>
       <div class="downloads-apps">
@@ -219,12 +219,145 @@
     <!--SignUp-->
     <section class="sign-up">
       <div class="sign-up__wrap">
-      <img src="./img/user.svg" alt="user" class="sign-up__image" />
-      <p class="sign-up__title">Sign up and get 20% off your first booking</p>
-      <button class="sign-up__btn">Sign up</button>
-      <button class="sign-up__btn-close">
-        <img src="./img/close.svg" alt="X" class="sign-up__image-close" />
-      </button>
+        <img src="./img/user.svg" alt="user" class="sign-up__image" />
+        <p class="sign-up__title">Sign up and get 20% off your first booking</p>
+        <button class="sign-up__btn">Sign up</button>
+        <button class="sign-up__btn-close" aria-label="close">
+          <img src="./img/close.svg" alt="close" class="sign-up__image-close" />
+        </button>
+      </div>
+    </section>
+    <!--Reviews-->
+    <section class="reviews">
+      <h2 class="reviews__title">
+        <span class="reviews__title-visible">Guests</span> reviews
+      </h2>
+      <div class="reviews__slider">
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <div class="reviews__image-wrap">
+              <img
+                src="./img/Resort&Spa.svg"
+                alt="Resort&Spa"
+                class="reviews__image"
+              />
+              <p class="reviews__image-title">From 250 USD</p>
+            </div>
+            <div class="reviews__hotel-and-rate">
+              <h3 class="reviews__hotel-name">Ubud Bali Resort&SPA</h3>
+              <p class="reviews__rating">9,4</p>
+            </div>
+            <div class="reviews__place-and-count">
+              <p class="reviews__place">Bali, Indonesia</p>
+              <p class="reviews__counter">1324 reviews</p>
+            </div>
+            <div class="reviews__guests">
+              <svg class="reviews__guests-account">
+                <use xlink:href="./img/Sprites.svg#Account"></use>
+              </svg>
+              <div class="reviews__guests-info">
+                <p class="reviews__guests-name">Hanna Ivanova</p>
+                <p class="reviews__guests-country">
+                  <img
+                    src="./img/ukraine.svg"
+                    alt="Ukraine"
+                    class="reviews__country"
+                  />
+                  Ukraine
+                </p>
+              </div>
+            </div>
+            <p class="reviews__text">
+              Great location, really pleasant and clean rooms, but the thing
+              that makes this such a good place to stay are the staff. All of
+              the people are incredibly helpful and generous with their time and
+              advice.
+            </p>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__image-wrap">
+              <img src="./img/Hostel.svg" alt="Hostel" class="reviews__image" />
+              <p class="reviews__image-title">From 40 USD</p>
+            </div>
+            <div class="reviews__hotel-and-rate">
+              <h3 class="reviews__hotel-name">King Kong Hostel</h3>
+              <p class="reviews__rating">8,9</p>
+            </div>
+            <div class="reviews__place-and-count">
+              <p class="reviews__place">Rotterdam, Netherlands</p>
+              <p class="reviews__counter">2016 reviews</p>
+            </div>
+            <div class="reviews__guests">
+              <svg class="reviews__guests-account">
+                <use xlink:href="./img/Sprites.svg#Account"></use>
+              </svg>
+              <div class="reviews__guests-info">
+                <p class="reviews__guests-name">Adam Smith</p>
+                <p class="reviews__guests-country">
+                  <img src="./img/usa.svg" alt="Usa" class="reviews__country" />
+                  USA
+                </p>
+              </div>
+            </div>
+            <p class="reviews__text">
+              I've been in this hostel for a month and here is the best hostel
+              of all
+            </p>
+            <p class="reviews__text">
+              Excellent management of excellent and ethical staff and bedrooms
+              Bathrooms are always clean and excellent
+            </p>
+            <p class="reviews__text">
+              Most importantly, those who work here are kind and good-natured.
+            </p>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__image-wrap">
+              <img src="./img/Hotel.svg" alt="Hotel" class="reviews__image" />
+              <p class="reviews__image-title">From 100 USD</p>
+            </div>
+            <div class="reviews__hotel-and-rate">
+              <h3 class="reviews__hotel-name">Rokoko Hotel</h3>
+              <p class="reviews__rating">9,1</p>
+            </div>
+            <div class="reviews__place-and-count">
+              <p class="reviews__place">Ourika, Marocco</p>
+              <p class="reviews__counter">815 reviews</p>
+            </div>
+            <div class="reviews__guests">
+              <svg class="reviews__guests-account">
+                <use xlink:href="./img/Sprites.svg#Account"></use>
+              </svg>
+              <div class="reviews__guests-info">
+                <p class="reviews__guests-name">Anika Messer</p>
+                <p class="reviews__guests-country">
+                  <img
+                    src="./img/germany.svg"
+                    alt="Germany"
+                    class="reviews__country"
+                  />
+                  Germany
+                </p>
+              </div>
+            </div>
+            <p class="reviews__text">
+              Efficient, friendly, professional, and appropriately attentive.
+              Great hotel in a great location. Easy access to all the
+              surrounding historical sites. Staff is fantastic. Will definitely
+              stay at this location during my next stay in Marocco.
+            </p>
+          </li>
+        </ul>
+        <div class="reviews__button-wrap">
+          <button class="reviews__button" type="button">
+            <img src="./img/arrow.svg" alt="slider" />
+          </button>
+        </div>
+        <img
+          src="./img/navigation-dots.svg"
+          alt="dots"
+          class="reviews__nav-dots"
+        />
       </div>
     </section>
     <!--Sign-up App-->
@@ -238,7 +371,9 @@
         <svg class="sign-up-app__logo">
           <use xlink:href="./img/Sprites.svg#logo"></use>
         </svg>
-        <p class="sign-up-app__title">Sign up in the app and get 20% off your first booking</p>
+        <p class="sign-up-app__title">
+          Sign up in the app and get 20% off your first booking
+        </p>
         <a href="" class="sign-up-app__download">Install</a>
       </div>
     </section>
